@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veebilehe projekt</title><!--Hiljem teemakohane pealkiri-->
+    <title>Järjendloogika</title><!--Hiljem teemakohane pealkiri-->
     <link rel="stylesheet" href="CSSpealeht_1.css">
 </head>
 <body>
@@ -14,9 +14,20 @@
             <li><a href="#tagasiside">Tagasiside</a></li>
         </ul>
     </header>
+    <h2>Järjendloogika</h2>
     <section class="" id="näide">
-        <h1></h1><!--ei tule dropdowniga, vaid kõik kohe väljas-->
-        <p>Näidisülesanne <br>joonis vms<br>tekst<br>lahenduskäik</p>
+        <h1></h1><!--kas joonised ja sellega kokkukäiv tekst kõrvuti või kuidas see paigutus?-->
+        <ol>
+            <img class="pildid" src="joonis_1.1.1.png"></img>
+            <li>Küsitud on väljundeid tsükli lõpus – see tähendab, et peame tsükli läbi tegema signaalide (a-de) viimase numbriga ehk viimase biti väärtusega, sest väljundid muutuvad iga tsükli läbitegemise lõpus. Ehk peame skeemi läbi tegema, kui a0 = 0, a1 = 1, a2 = 1, a3 = 1, a4 = 1, a5 = 0, a6 = 1</li>
+            <li>Alustame skeemi alt. Väärtused liiguvad mööda juhtmeid edasi. Mummu tähendab väärtuse vastupidiseks muutmist pärast mingit operatsiooni ehk tehet bittidega. Kui aga tehet teha ei taheta, vaid tahetakse lihtsalt väärtust vastupidiseks muuta, kirjutatakse mummu ette kolmnurk. Ümara tipuga “kolmnurkne” kujund tähendab AND operatsiooni ehk mõlemad väärtused peavad olema “tõesed” ehk ühed. AND operatsioonist võib mõelda ka kui korrutustehtest: 0*0 = 0, 0*1 = 0, 1*0 = 0, 1*1 = 1. Terava tipuga kolmnurkne kujund tähistab OR operatsiooni ehk vähemalt üks väärtustest peab olema “tõene” ehk 1. Ka mõlemad võivad olla ühed. Täidame kujundid vastavalt sellele ära.<br>PS! F0 ega f1 ei ole tegelikult teise ja kolmanda OR-i väljundi leidmiseks vajalikud, kuigi need on nende sisendid, sest teine OR-i sisend on juba 1 ning vastus seega kindlalt 1. Viimase puhul me aga veel OR-i väljundit ei tea.</li>
+            <img class="pildid" src="joonis_1.1.2.png"></img>
+            <li>Oleme ära täitnud nii palju kui võimalik ilma väljundeid (f-id) välja arvutamata. Väljundi arvutamiseks vaatame trigeri tüüpi (meie skeemil D), taktsagedust (tähis tühi kolmnurk, mitte segamini ajada väärtuse pööramisega) ja sisendit.</li>
+            <li>Arvutame esimese väljundi f0: meil on D-triger, seega eelmine väärtus ei loe(????). Taktsignaal on a6, mis on parasjagu 1 – see tähendab, et eelmise tehte väärtus muutub uue tehte väärtuseks (kui oleks 0, siis peaks arvutama eelmiste tehete väljundi ja see oleks ka uue tehte väljundiks). Sisend tuleb OR-ist ja on 1, seega on ka väljund üks. Nagu ka teada, siis D-triger on data-triger ehk “salvestab” lihtsalt väärtuse, mis tema sisendiks on.</li>
+            <li>Kordame sama ülejäänud väljunditega. Saame, et f2 on 0 ning oleme selle abil nüüd leidnud ka viimase OR-i tulemuse, mis on 0. Leiame selle abil f3 väljundi.</li>
+            <li>YAYY!! Meil on väljundid ja seega vastus käes!</li>
+            <img class="pildid" src="joonis_1.1.3.png"></img>
+        </ol>
     </section>
     <section class="" id="harjutamine">
         <p>Vihjetega ülesanne</p>
