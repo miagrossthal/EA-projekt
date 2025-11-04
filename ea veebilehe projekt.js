@@ -1,5 +1,5 @@
-// Õige vastus on 12
-let oigeVastus = "12";
+// Õige vastus on 1011
+let oigeVastus = "1011";
 
 document.getElementById("kontrolli").addEventListener("click", function() {
   let kasutajaVastus = document.getElementById("vastus").value;
@@ -12,3 +12,4 @@ document.getElementById("kontrolli").addEventListener("click", function() {
     document.getElementById("tulemus").style.color = "red";
   }
 });
+
