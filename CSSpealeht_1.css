@@ -1,0 +1,32 @@
+
+/*kogu nav sama mis main failis*/
+nav ul {
+    /* Loendi sümbolid ja numbrid puuduvad */
+    list-style-type: none;
+    padding: 0;
+    padding-top: 30px;
+    padding-right: 40px;
+    margin: 0;
+    overflow: hidden; /* lingid on üksteise kõrval*/
+    position: fixed; /* lingid ei kao kerimisel*/
+    right: 0;
+    top: 0;
+}
+
+nav ul li {
+    font-weight: bold; /* Peakategooria on paksus kirjas */
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none; /* Lingid ei ole allakriipsutatud */
+}
+
+nav ul ul li {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    font-weight: normal; /* Alakategooriad on tavalises kirjas */
+}

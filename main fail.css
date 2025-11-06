@@ -1,6 +1,6 @@
 html, body {
-    background-color: lightyellow;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(176, 219, 234);
+    font-family: Georgia, sans-serif, "Times New Roman";
     margin: 5px;
     padding: 5px;
     font-size: 15px;
@@ -10,18 +10,32 @@ html, body {
 nav {
     display: flex;
     gap: 50px;
-    justify-content: left; /* Lingid on vasakul */
+    justify-content: right; /* Lingid on paremal */
 }
 
 nav ul {
     /* Loendi sümbolid ja numbrid puuduvad */
     list-style-type: none;
     padding: 0;
+    padding-top: 30px;
+    padding-right: 40px;
     margin: 0;
+    overflow: hidden; /* lingid on üksteise kõrval*/
+    position: fixed; /* lingid ei kao kerimisel*/
+    right: 0;
+    top: 0;
 }
 
 nav ul li {
     font-weight: bold; /* Peakategooria on paksus kirjas */
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none; /* Lingid ei ole allakriipsutatud */
 }
 
 nav ul ul li {
@@ -32,11 +46,11 @@ nav ul ul li {
 
 /* Linkide kujundused */
 a:link {
-    color: brown /* Algselt on kodulehe link pruun. */
+    color: rgb(255, 136, 0); /* Algselt on kodulehe link oranž. */
 }
 
 a:visited {
-    color: rgb(216, 131, 26); /* Kui kodulehte on külastatud, muutub link tumeoranžiks. */
+    color: rgb(255, 106, 0); /* Kui kodulehte on külastatud, muutub link tumeoranžiks. */
 }
 
 a:hover {
@@ -44,12 +58,15 @@ a:hover {
 }
 
 a:active {
-    color: darkgreen; /* Kui lingile klikkida (ehk teha aktiivseks), muutub link tumeroheliseks. */
+    color: darkblue; /* Kui lingile klikkida (ehk teha aktiivseks), muutub link tumesiniseks. */
 }
 
 h1 {
     font-size: 30px;
-    color: rgb(66, 84, 34);
+    color: rgb(30, 51, 152);
+    text-align: center;
+    line-height: 50px;
+    margin: 10%;
 }
 
 h2 {
