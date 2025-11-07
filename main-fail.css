@@ -1,6 +1,6 @@
 html, body {
     background-color: rgb(176, 219, 234);
-    font-family: Georgia, sans-serif, "Times New Roman";
+    font-family: Georgia, "Times New Roman", sans-serif;
     margin: 5px;
     padding: 5px;
     font-size: 15px;
@@ -33,7 +33,6 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    text-align: center;
     padding: 14px 30px;
     text-decoration: none; /* Lingid ei ole allakriipsutatud */
 }
