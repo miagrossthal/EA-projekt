@@ -81,3 +81,66 @@ h3 {
 summary {
     font-weight: bold;
 }
+
+/* Vbl on vaja siin asju muuta, see kõik on keerleva kuubi osa */
+img.kuup {
+    width:200px; 
+    height:200px;
+    border-radius:200px;
+ }
+ 
+ @keyframes spin {
+    0% { 
+       transform: rotateX(0deg) rotateZ(0deg); }
+    100% { 
+       transform: rotateX(180deg) rotateZ(180deg); }
+ }
+ 
+ .box {
+    position: center;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: 50px;
+    animation: spin 10s infinite linear; /* Animatsioon kestab 10sekundit, pöörleb ning kordub lõpmatult */
+    transform-style: preserve-3d;
+ }
+ 
+ .box div {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+ }
+ 
+ /* Piltide asetused ja taustavärvid */
+ .side1 {
+     background: rgb(168, 210, 223);
+     transform:translateZ(100px);
+ }
+ 
+ .side2 {
+     background:rgb(232, 232, 175);
+     transform:rotateY(90deg) translateZ(100px);
+ }
+ 
+ .side3 {
+     background:rgb(236, 216, 181);
+     transform:rotateY(180deg) translateZ(100px);
+ }
+ 
+ .side4 {
+     background:rgb(186, 186, 231);
+     transform:rotateY(-90deg) translateZ(100px);
+ }
+ 
+ .side5 {
+     background:rgb(235, 192, 192);
+     transform:rotateX(-90deg) translateZ(100px);
+ }
+ 
+ .side6 {
+     background:rgb(196, 241, 197);
+     transform:rotateX(90deg) translateZ(100px);
+ }

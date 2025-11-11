@@ -1,3 +1,4 @@
+// Kõik need koodid on Mia varasematest projektidest
 // Õige vastus on 1011
 let oigeVastus = "1011";
 

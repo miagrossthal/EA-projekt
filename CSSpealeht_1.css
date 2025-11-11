@@ -30,3 +30,42 @@ nav ul ul li {
     margin-left: 1em;
     font-weight: normal; /* Alakategooriad on tavalises kirjas */
 }
+
+/* kontrollkasti disain */
+#vastus {
+  width: 150px;          /* Laius */
+  height: 40px;          /* Kõrgus */
+  font-size: 17px;       /* Teksti suurus */
+  padding: 8px;          /* Sisevahe */
+  border: 2px solid #007bff; /* Sinine raam */
+  border-radius: 10px;   /* Ümardatud nurgad */
+  outline: none;         /* Eemaldab vaikimisi äärise klikkimisel */
+  transition: 0.3s;      /* Sujuv animatsioon */
+}
+
+/* Efekt, kui kasutaja klõpsab väljale */
+#vastus:focus {
+  border-color: #28a745; /* Roheline raam fookuses */
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5); /* Helendus ümber */
+}
+
+#kontrolli {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#kontrolli:hover {
+  background-color: #0056b3;
+}
+
+#tulemus {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
