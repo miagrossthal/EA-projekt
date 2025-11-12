@@ -33,7 +33,7 @@ nav ul {
     flex-direction: row;
 }
 
-nav ul li, .nav-avaleht {
+nav ul li {
     font-weight: bold; /* Peakategooria on paksus kirjas */
     margin-left: 20px;
     position: relative;
@@ -46,7 +46,7 @@ nav ul li a, nav ul li span {
     cursor: pointer;
 }
 
-nav ul ul li, .nav-avaleht {
+nav ul ul li {
     margin-top: 0.5em;
     margin-left: 1em;
     font-weight: normal; /* Alakategooriad on tavalises kirjas */

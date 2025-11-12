@@ -11,6 +11,12 @@
         <nav>
             <ul>
                 <li>
+                    <span>Avaleht</span>
+                    <ul class="nav-alammenüü">
+                        <li><a href="tervitusleht.html">Tagasi avalehele</a></li>
+                    </ul>
+                </li>
+                <li>
                     <span>Järjendloogika</span>
                     <ul class="nav-alammenüü">
                         <li><a href="pealeht_1.html">Lahenduskäiguga ülesanne</a></li>
@@ -25,7 +31,7 @@
                         </ul>
                 </li>
                 <li>
-                    <span>RISC protsessor</span>
+                    <span>Tehted RISC protsessoris</span>
                     <ul class="nav-alammenüü">
                         <li><a href="pealeht_3.html">Lahenduskäiguga ülesanne</a></li>
                         <li><a href="pealeht_3.html#harjutamine">Vihjetega ülesanne</a></li>
@@ -34,19 +40,12 @@
             </ul>
         </nav>
     </header>
-    <header>
-        <ul>
-            <li><a href="#näide">Näidisülesanne</a></li>
-            <li><a href="#harjutamine">Vihjetega ülesanne harjutamiseks</a></li>
-            <li><a href="#tagasiside">Tagasiside</a></li>
-        </ul>
-    </header>
     <h1>RISC protsessor</h1>
     <p>Siia tuleb kolmas teema</p>
     <section class="kontrollkast">
-        <input id="vastus" data-leht="pealeht_3" type="text" placeholder="Sisesta vastus">
-        <button class="kontrolli" data-leht="pealeht_3">Kontrolli</button>
-        <p id="tulemus" data-leht="pealeht_3"></p>
+        <input id="vastus" type="text" placeholder="Sisesta oma vastus">
+        <button id="kontrolli">Kontrolli</button>
+        <p id="tulemus"></p>
     </section>
     <section class="" id="tagasiside">
         <!--tagasiside kastike-->
