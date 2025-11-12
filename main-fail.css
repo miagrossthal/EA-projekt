@@ -2,7 +2,7 @@ html, body {
     /* background-color: #00a7e1; */
     background-image: url('veebileht-taispikk.png');
     font-family: Georgia, "Times New Roman", sans-serif;
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
     font-size: 15px;
     text-align: justify;
@@ -128,6 +128,7 @@ img.kuup {
     align-items: center;
     margin-left: 50%;
     margin-top: 50px;
+    margin-bottom: 75px;
     animation: spin 10s infinite linear; /* Animatsioon kestab 10sekundit, pöörleb ning kordub lõpmatult */
     transform-style: preserve-3d;
  }
