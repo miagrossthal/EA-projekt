@@ -1,6 +1,11 @@
 html, body {
     /* background-color: #00a7e1; */
     background-image: url('veebileht-taispikk.png');
+    background-size: cover; /* Katab kogu ala, säilitades proportsioonid */
+    background-position: center center; /* Keskendab pildi */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* valikuline, saab ka "scroll" */ /* Hoiab tausta kogu lehe ulatuses */
+    min-height: 100vh; /* Kui tahad, et body oleks vähemalt kogu kõrgusega */
     font-family: Georgia, "Times New Roman", sans-serif;
     margin: 10px;
     padding: 5px;
