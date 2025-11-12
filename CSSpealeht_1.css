@@ -1,5 +1,10 @@
 
 /*kogu nav sama mis main failis*/
+nav {
+    /*gap: 50px;*/
+    /*justify-content: right;*/ /* Lingid on paremal */
+}
+
 nav ul {
     /* Loendi sümbolid ja numbrid puuduvad */
     list-style-type: none;
@@ -7,28 +12,49 @@ nav ul {
     padding-top: 30px;
     padding-right: 40px;
     margin: 0;
-    overflow: hidden; /* lingid on üksteise kõrval*/
     position: fixed; /* lingid ei kao kerimisel*/
     right: 0;
     top: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 
 nav ul li {
     font-weight: bold; /* Peakategooria on paksus kirjas */
-    float: left;
+    margin-left: 20px;
+    position: relative;
 }
 
-nav ul li a {
+nav ul li a, nav ul li span {
     display: block;
-    text-align: center;
     padding: 14px 30px;
     text-decoration: none; /* Lingid ei ole allakriipsutatud */
+    cursor: pointer;
 }
 
 nav ul ul li {
     margin-top: 0.5em;
     margin-left: 1em;
     font-weight: normal; /* Alakategooriad on tavalises kirjas */
+}
+
+.nav-alammenüü {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    z-index: 100;
+    float: none;
+    top: 100%;
+    left: 0;
+}
+.nav-alammenüü li {
+    float: none;
+}
+
+nav ul li:hover .nav-alammenüü {
+    display: block;
+    cursor: pointer;
 }
 
 /* kontrollkasti disain */
