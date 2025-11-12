@@ -32,13 +32,13 @@
         <h3>Näidislahendusega ülesanne</h3>
         <img class="pildid" src="joonis_1.1.1.png" alt="Joonis 1.1.1">
         <ol>
-            <li>Pildil on nihkeregister, milles a1 võrdub kogu aeg ühega. Kõik AND-id, kuhu väljundid (f-id) suunduvad saavad oma teiseks sisendiks alati nulli, kuna see tuleb a1 vastandväärtusest, seega eelmised väljundid ei mõjuta järgmisi väljundeid (need n-ö nullitakse ära). See tähendab, et kogu bitijadaga pole vaja ülesannet läbi teha, piisab küsitud kohast. Küsitud on väljundeid tsükli lõpus – see tähendab, et peame tsükli läbi tegema signaalide (a-de) viimase numbriga ehk viimase biti väärtusega. Ehk peame skeemi läbi tegema, kui a0 = 0, a1 = 1, a2 = 1, a3 = 1, a4 = 1, a5 = 0, a6 = 1<br></li>
+            <li>Pildil on nihkeregister, milles a<sub>1</sub> võrdub kogu aeg ühega. Kõik AND-id, kuhu väljundid (f-id) suunduvad saavad oma teiseks sisendiks alati nulli, kuna see tuleb a<sub>1</sub> vastandväärtusest, seega eelmised väljundid ei mõjuta järgmisi väljundeid (need n-ö nullitakse ära). See tähendab, et kogu bitijadaga pole vaja ülesannet läbi teha, piisab küsitud kohast. Küsitud on väljundeid tsükli lõpus – see tähendab, et peame tsükli läbi tegema signaalide (a-de) viimase numbriga ehk viimase biti väärtusega. Ehk peame skeemi läbi tegema, kui a<sub>0</sub> = 0, a<sub>1</sub> = 1, a<sub>2</sub> = 1, a<sub>3</sub> = 1, a<sub>4</sub> = 1, a<sub>5</sub> = 0, a<sub>6</sub> = 1<br></li>
             <li>Alustame skeemi alt. Väärtused liiguvad mööda juhtmeid edasi. Mummu tähendab väärtuse vastupidiseks muutmist pärast mingit operatsiooni ehk tehet bittidega. Kui aga tehet teha ei taheta, vaid tahetakse lihtsalt väärtust vastupidiseks muuta, kirjutatakse mummu ette kolmnurk. Ümara tipuga “kolmnurkne” kujund tähendab AND operatsiooni ehk mõlemad väärtused peavad olema “tõesed” ehk ühed. AND operatsioonist võib mõelda ka kui korrutustehtest: 0*0 = 0, 0*1 = 0, 1*0 = 0, 1*1 = 1. Terava tipuga kolmnurkne kujund tähistab OR operatsiooni ehk vähemalt üks väärtustest peab olema “tõene” ehk 1. Ka mõlemad võivad olla ühed. Täidame kujundid vastavalt sellele ära.</li>
         </ol>
         <img class="pildid" src="joonis_1.1.2_UUS.png" alt="Joonis 1.1.2">
         <ol start="3">
-            <li>Oleme ära täitnud nii palju kui võimalik ilma väljundeid (f-id) välja arvutamata. PS! kuna a1 vastandväärtus on 0, siis kõik AND-id, mille sisend see on, on alati nullid ja teine sisend ei loe. Väljundi arvutamiseks vaatame trigeri tüüpi (meie skeemil D), taktsagedust (tähis tühi kolmnurk, mitte segamini ajada väärtuse pööramisega) ja sisendit.<br></li>
-            <li>Arvutame esimese väljundi f0. Meil on D-triger, mille väljund tuleb Q-st ilma katuseta ehk väärtust ei pöörata vastandväärtuseks. Taktsignaal on a6, mis on parasjagu 1 – see tähendab, et eelmise tsükli tehte väärtus muutub uue tsükli tehte väärtuseks (kui oleks 0, siis peaks arvutama eelmise tsükli väljundi ja see oleks ka uue tehte väljundiks). Sisend tuleb OR-ist ja on 1, seega on ka väljund üks. Nagu ka teada, siis D-triger on data-triger ehk “salvestab” lihtsalt väärtuse, mis tema sisendiks on.<br></li>
+            <li>Oleme ära täitnud nii palju kui võimalik ilma väljundeid (f-id) välja arvutamata. PS! kuna a<sub>1</sub> vastandväärtus on 0, siis kõik AND-id, mille sisend see on, on alati nullid ja teine sisend ei loe. Väljundi arvutamiseks vaatame trigeri tüüpi (meie skeemil D), taktsagedust (tähis tühi kolmnurk, mitte segamini ajada väärtuse pööramisega) ja sisendit.<br></li>
+            <li>Arvutame esimese väljundi f<sub>0</sub>. Meil on D-triger, mille väljund tuleb Q-st ilma katuseta ehk väärtust ei pöörata vastandväärtuseks. Taktsignaal on a<sub>6</sub>, mis on parasjagu 1 – see tähendab, et eelmise tsükli tehte väärtus muutub uue tsükli tehte väärtuseks (kui oleks 0, siis peaks arvutama eelmise tsükli väljundi ja see oleks ka uue tehte väljundiks). Sisend tuleb OR-ist ja on 1, seega on ka väljund üks. Nagu ka teada, siis D-triger on data-triger ehk “salvestab” lihtsalt väärtuse, mis tema sisendiks on.<br></li>
             <li>Kordame sama ülejäänud väljunditega.<br></li>
             <li>YAYY!! Meil on väljundid ja seega vastus käes!</li>
         </ol>
@@ -49,19 +49,19 @@
         <img class="pildid" src="vihjega_joonis_1.2.1.png" alt="Joonis 1.2.1"><!--ma täpselt ei tea kuidas kõige parem seda pilti normiks panna-->
         <details>
             <summary>Vihje 1</summary>
-            <p>Tuvasta, milliste numbritega tuleb tsükkel läbi teha. NB! a1 on seekord pidevalt 0, mitte 1!</p>
+            <p>Tuvasta, milliste numbritega tuleb tsükkel läbi teha. NB! a<sub>1</sub> on seekord pidevalt 0, mitte 1!</p>
         </details>
         <details>
             <summary>Vihje 2</summary>
-            <p>Kuna a1 on 0, siis eelmise tsükli väljundite väärtused mõjutavad järgmisi. See tähendab, et skeem tuleb läbi teha kogu bitijadaga, mitte ainult viimaste bittidega.</p>
+            <p>Kuna a<sub>1</sub> on 0, siis eelmise tsükli väljundite väärtused mõjutavad järgmisi. See tähendab, et skeem tuleb läbi teha kogu bitijadaga, mitte ainult viimaste bittidega.</p>
         </details>
         <details>
             <summary>Vihje 3</summary>
-            <p>Enne bitijada läbilaskmist on standardne, et kõik väljundid on nullid, seega f0…f3 annavad AND-väravate sisenditeks esimeses tsüklis nullid.</p>
+            <p>Enne bitijada läbilaskmist on standardne, et kõik väljundid on nullid, seega f<sub>0</sub>…f<sub>3</sub> annavad AND-väravate sisenditeks esimeses tsüklis nullid.</p>
         </details>
         <details>
             <summary>Vihje 4</summary>
-            <p>Pane kirja iga tsükli lõpus f0…f3. Kui taktsignaal ehk a6 oli selle tsükli ajal 0, siis AND-väravatesse jäävad samad numbrid. Kui taktsignaal oli 1, siis läheb uus väärtus ehk käesoleva tsükli vastav väljund AND-väravasse.</p>
+            <p>Pane kirja iga tsükli lõpus f<sub>0</sub>…f<sub>3</sub>. Kui taktsignaal ehk a<sub>6</sub> oli selle tsükli ajal 0, siis AND-väravatesse jäävad samad numbrid. Kui taktsignaal oli 1, siis läheb uus väärtus ehk käesoleva tsükli vastav väljund AND-väravasse.</p>
         </details>
         <p>Kontrolli oma vastust</p>
     </section>

@@ -1,5 +1,6 @@
 html, body {
-    background-color: rgb(176, 219, 234);
+    /* background-color: #00a7e1; */
+    background-image: url('veebileht-taispikk.png');
     font-family: Georgia, "Times New Roman", sans-serif;
     margin: 5px;
     padding: 5px;
@@ -8,9 +9,8 @@ html, body {
 }
 
 nav {
-    display: flex;
-    gap: 50px;
-    justify-content: right; /* Lingid on paremal */
+    /*gap: 50px;*/
+    /*justify-content: right;*/ /* Lingid on paremal */
 }
 
 nav ul {
@@ -20,21 +20,25 @@ nav ul {
     padding-top: 30px;
     padding-right: 40px;
     margin: 0;
-    overflow: hidden; /* lingid on üksteise kõrval*/
     position: fixed; /* lingid ei kao kerimisel*/
     right: 0;
     top: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 
 nav ul li {
     font-weight: bold; /* Peakategooria on paksus kirjas */
-    float: right;
+    margin-left: 20px;
+    position: relative;
 }
 
-nav ul li a {
+nav ul li a, nav ul li span {
     display: block;
     padding: 14px 30px;
     text-decoration: none; /* Lingid ei ole allakriipsutatud */
+    cursor: pointer;
 }
 
 nav ul ul li {
@@ -43,26 +47,46 @@ nav ul ul li {
     font-weight: normal; /* Alakategooriad on tavalises kirjas */
 }
 
+.nav-alammenüü {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    z-index: 100;
+    float: none;
+    top: 100%;
+    left: 0;
+}
+.nav-alammenüü li {
+    float: none;
+}
+
+nav ul li:hover .nav-alammenüü {
+    display: block;
+    cursor: pointer;
+}
+
 /* Linkide kujundused */
 a:link {
-    color: rgb(255, 136, 0); /* Algselt on kodulehe link oranž. */
+    color: #ffa630; /* Algselt on kodulehe link oranž. */
 }
 
 a:visited {
-    color: rgb(255, 106, 0); /* Kui kodulehte on külastatud, muutub link tumeoranžiks. */
+    color: #f17720; /* Kui kodulehte on külastatud, muutub link tumeoranžiks. */
 }
 
 a:hover {
     color: black; /* Kui hiir on lingi peal, on tekst must. */
+    cursor: pointer;
 }
 
 a:active {
-    color: darkblue; /* Kui lingile klikkida (ehk teha aktiivseks), muutub link tumesiniseks. */
+    color: #0474ba; /* Kui lingile klikkida (ehk teha aktiivseks), muutub link tumesiniseks. */
 }
 
 h1 {
-    font-size: 30px;
-    color: rgb(30, 51, 152);
+    font-size: 40px;
+    /*color: #ebebeb;*/
+    color: #0474ba;
     text-align: center;
     line-height: 50px;
     margin: 10%;
