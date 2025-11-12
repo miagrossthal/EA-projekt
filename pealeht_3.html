@@ -45,16 +45,15 @@
         <h1></h1>
         <h3>Näidislahendusega ülesanne</h3>
         <img class="pildid" src="joonis_3.1.1.png" alt="Joonis 3.1.1">
+        <img class="pildid" src="joonis_3.1.2.png" alt="Joonis 3.1.2">
         <ol>
-            <li>1. punkt<br></li>
-            <li>2. punkt</li>
-        </ol>
-        <img class="pildid" src="joonis_3.1.2_UUS.png" alt="Joonis 3.1.2">
-        <ol start="3">
-            <li>3. punkt<br></li>
-            <li>4. punkt<br></li>
-            <li>5. punkt<br></li>
-            <li>6. punkt</li>
+            <li>Loeme sisestatud tehet n-ö tagurpidi ehk vaatame osasid paremalt vasakule. ALU tehe on meile ette öeldud – liidetakse kahe registri sisu ning kirjutatakse tulemus kolmandasse registrisse.<br></li>
+            <li>Järgmine väärtus on 01111 – see on register, kuhu kirjutame tehte tulemuse. Arvutame selle ümber kümnendkoodi. Bitte loeme arvutamisel samuti paremalt vasakule. 2<sup>0</sup> * 1 + 2<sup>1</sup> * 1 + 2<sup>2</sup> * 1 + 2<sup>3</sup> * 1 + 2<sup>4</sup> * 0 = 1 + 2 + 4 + 8 + 0 = 15. Seega see osa viitab registrile R15.</li>
+            <li>Järgmine väärtus on 00010. Nagu enne nägime, siis kõik nullide kohal olevad arvud korrutatakse niikuinii nulliga, seega lihtsustatud tehe on siin 2<sup>1</sup> * 1 = 2. See tähendab, et tehte esimene osa on registri R2 sisu, mis on 1632.<br></li>
+            <li>Järgmine väärtus on 00001, mis on ka kümnendkoodis 1. See tähendab, et tehte teine osa on registri R1 sisu, mis on 1286.<br></li>
+            <li>Nagu ülesandes öeldud, peame tegema liitmistehte. Kokkuvõttes liidame R2 ja R1 sisu ning kirjutame registrisse R15. 1632 + 1286 = 2920.<br></li>
+            <li>Küsitud on registri R15 sisu käsu täitmise järel. See tähendab, et eelmine väärtus 5789 on üle kirjutatud meie tehte tulemusega ning ülesande vastus on 2920.<br></li>
+            <li>Saime teada, et tahvli vaatamine polnudki selles ülesandes vajalik.</li>
         </ol>
     </section>
     <section class="" id="harjutamine">
@@ -63,19 +62,30 @@
         <img class="pildid" src="joonis_3.2.1.png" alt="Joonis 3.2.1">
         <details>
             <summary>Vihje 1</summary>
-            <p>esimene vihje</p>
+            <p>Käskude täitmise järjekord RISC protsessoris on järgmine.</p>
+                <ol>
+                    <li>Loe käsk, PC +1.</li>
+                    <li>Dekodeeri käsk ja loe R-ide sisu [*lähteregister*].</li>
+                    <li>Arvuta [*ALU*].</li>
+                    <li>Loe mälust / salvesta mällu (kui vaja).</li>
+                    <li>Salvesta tulem registrisse (kui vaja).</li>
+                </ol>
         </details>
         <details>
             <summary>Vihje 2</summary>
-            <p>teine vihje</p>
+            <p>Bitijadast tulevate registrite tehe on samas järjekorras: esimene + teine ja tulemus kirjutatakse kolmandasse.</p>
         </details>
         <details>
             <summary>Vihje 3</summary>
-            <p>kolmas vihje</p>
+            <p>Tahvli vaatamine on selles ülesandes vajalik – otsi üles RY.</p>
         </details>
         <details>
             <summary>Vihje 4</summary>
-            <p>neljas punkt</p>
+            <p>Vali_Y näitab, kust tuleb RY-isse kirjutatav väärtus.</p>
+        </details>
+        <details>
+            <summary>Vihje 5</summary>
+            <p>Vali_Y 0 valib vasakpoolseima sisendi, 1 vasakult teise jne.</p>
         </details>
     <p>Kontrolli oma vastust</p>
     <section class="kontrollkast">
