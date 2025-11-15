@@ -44,6 +44,7 @@
     <section class="" id="näide">
         <h1></h1><!--kas joonised ja sellega kokkukäiv tekst kõrvuti või kuidas see paigutus?-->
         <h3>Näidislahendusega ülesanne</h3>
+        <p>Joonisel kujutatud nihkeregistri sisenditesse antakse alljärgnevad signaalid.<br>a0 = 11111100 <br> a1 = 11111111 <br> a2 = 00001111 <br> a3 = 11110011 <br> a4 = 11001111 <br> a5 = 11111100 <br> a6 = 01010101 <br> Milline on signaal nihkeregistri väljundites f0f1f2f3 kujutatud tsükli lõpuks? <br> Vastuseks kirjuta neli numbrit ülaltoodud järjestuses.</p>
         <img class="pildid" src="joonis_1.1.1.png" alt="Joonis 1.1.1">
         <ol>
             <li>Pildil on nihkeregister, milles a<sub>1</sub> võrdub kogu aeg ühega. Kõik AND-id, kuhu väljundid (f-id) suunduvad saavad oma teiseks sisendiks alati nulli, kuna see tuleb a<sub>1</sub> vastandväärtusest, seega eelmised väljundid ei mõjuta järgmisi väljundeid (need n-ö nullitakse ära). See tähendab, et kogu bitijadaga pole vaja ülesannet läbi teha, piisab küsitud kohast. Küsitud on väljundeid tsükli lõpus – see tähendab, et peame tsükli läbi tegema signaalide (a-de) viimase numbriga ehk viimase biti väärtusega. Ehk peame skeemi läbi tegema, kui a<sub>0</sub> = 0, a<sub>1</sub> = 1, a<sub>2</sub> = 1, a<sub>3</sub> = 1, a<sub>4</sub> = 1, a<sub>5</sub> = 0, a<sub>6</sub> = 1<br></li>
