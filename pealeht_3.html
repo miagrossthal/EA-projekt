@@ -44,6 +44,21 @@
     <section class="" id="näide">
         <h1></h1>
         <h3>Näidislahendusega ülesanne</h3>
+        <p>Selle RISC-protsessori käsud on 32-bitised, käsud täidetakse mäluviivituste puudumisel viie takti jooksul. <br> Registrite adresseerimiseks saame käsus kasutada viit bitti (iga adresseeritava registri kohta). <br> Multiplekserite juhtsignaalid, joonisel punase värviga, aktiveerivad sisendeid selliselt, et <br></p>
+        <ul>
+            <li>juhtsignaal 0 valib kõige vasakpoolsema sisendi,</li>
+            <li>juhtsignaal 1 valb multiplekseril vasakult teise sisendi,</li>
+            <li>juhtsignaal 2 valib multiplekseril vasakult kolmanda sisendi,</li>
+            <li>jne</li>
+        </ul>
+        <p>Testi lguses toodud joonisel (loengu lõpu pilt audika tahvlist) kujutatud RISC protsessoril tehakse järgmine masinkoodi tehe <br> 00001 00010 01111 00000000000000011 <br> Juhtsignaalid:</p>
+        <ul>
+            <li>ValiB=0</li>
+            <li>ALU_tehe = 00000000000000011 <br> (See on kahe registri sisu liitmise ja tulemuse kolmandasse registrisse kirjutamise tehe)</li>
+            <li>Vali_Y=00</li>
+            <li>Vali_C=01</li>
+        </ul>
+        <p><b>Mis on registri R15 sisu selle käsu täitmise järel?</b> <br> Protsessori registrite senine sisu oli järgmine: <br> R= = 0 <br> R1 = 3672 <br> R2 = 2091 <br> R3 = 1530 <br> R4 = 5393 <br> R5 = 4123 <br> ... <br> R15 = 7934 <br> ... <br> R31 = 4932 <b>SEE ON TEINE ÜLESANNE VIST</b></p>
         <img class="pildid" src="joonis_3.1.1.png" alt="Joonis 3.1.1">
         <img class="pildid" src="joonis_3.1.2.png" alt="Joonis 3.1.2">
         <ol>
