@@ -1,3 +1,8 @@
+body {
+  background-color: lightblue;
+  font-family: Georgia, "Times New Roman", sans-serif;
+  color: rgb(0, 0, 81);
+}
 
 /*kogu nav sama mis main failis*/
 nav {
@@ -31,6 +36,8 @@ nav ul li a, nav ul li span {
     padding: 14px 30px;
     text-decoration: none; /* Lingid ei ole allakriipsutatud */
     cursor: pointer;
+    color: aliceblue;
+    background-color: darkblue;
 }
 
 nav ul ul li {
@@ -99,12 +106,12 @@ nav ul li:hover .nav-alammenüü {
 .ül {
   display: flex;
   align-items: flex-start;
-  gap: 0;
+  gap: 5px;
 }
 
 .ül p {
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
 }
 
 #ül-joonis {

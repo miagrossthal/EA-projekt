@@ -1,3 +1,9 @@
+body {
+  background-color: lightblue;
+  font-family: Georgia, "Times New Roman", sans-serif;
+  color: rgb(0, 0, 81);
+}
+
 nav {
     /*gap: 50px;*/
     /*justify-content: right;*/ /* Lingid on paremal */
@@ -29,6 +35,8 @@ nav ul li a, nav ul li span {
     padding: 14px 30px;
     text-decoration: none; /* Lingid ei ole allakriipsutatud */
     cursor: pointer;
+    color: aliceblue;
+    background-color: darkblue;
 }
 
 nav ul ul li {
