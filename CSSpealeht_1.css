@@ -95,3 +95,19 @@ nav ul li:hover .nav-alammenüü {
   margin-top: 10px;
   font-weight: bold;
 }
+
+.ül {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.ül p {
+  margin: 0;
+  padding: 0;
+}
+
+#ül-joonis {
+  max-width: 500px;
+  display: block;
+}
