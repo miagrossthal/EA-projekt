@@ -44,6 +44,8 @@
     <section class="" id="näide">
         <h1></h1>
         <h3>Näidislahendusega ülesanne</h3>
+        <p>Loengus käsitlesime RISC-protsessorit, mille põhimõtte skeem on kujutatud järgmisel joonisel.</p>
+        <img class="pildid" src="joonis_3.1.1UUS.png" alt="Joonis 3.1.1">
         <p>Selle RISC-protsessori käsud on 32-bitised, käsud täidetakse mäluviivituste puudumisel viie takti jooksul. <br> Registrite adresseerimiseks saame käsus kasutada viit bitti (iga adresseeritava registri kohta). <br> Multiplekserite juhtsignaalid, joonisel punase värviga, aktiveerivad sisendeid selliselt, et <br></p>
         <ul>
             <li>juhtsignaal 0 valib kõige vasakpoolsema sisendi,</li>
@@ -51,16 +53,14 @@
             <li>juhtsignaal 2 valib multiplekseril vasakult kolmanda sisendi,</li>
             <li>jne</li>
         </ul>
-        <p>Testi lguses toodud joonisel (loengu lõpu pilt audika tahvlist) kujutatud RISC protsessoril tehakse järgmine masinkoodi tehe <br> 00001 00010 01111 00000000000000011 <br> Juhtsignaalid:</p>
+        <p>Testi alguses toodud joonisel (loengu lõpu pilt audika tahvlist) kujutatud RISC protsessoril tehakse järgmine masinkoodi tehe <br> 00001 00010 01111 00000000000000011 <br> Juhtsignaalid:</p>
         <ul>
             <li>ValiB=0</li>
             <li>ALU_tehe = 00000000000000011 <br> (See on kahe registri sisu liitmise ja tulemuse kolmandasse registrisse kirjutamise tehe)</li>
             <li>Vali_Y=00</li>
             <li>Vali_C=01</li>
         </ul>
-        <p><b>Mis on registri R15 sisu selle käsu täitmise järel?</b> <br> Protsessori registrite senine sisu oli järgmine: <br> R= = 0 <br> R1 = 3672 <br> R2 = 2091 <br> R3 = 1530 <br> R4 = 5393 <br> R5 = 4123 <br> ... <br> R15 = 7934 <br> ... <br> R31 = 4932 <b>SEE ON TEINE ÜLESANNE VIST</b></p>
-        <img class="pildid" src="joonis_3.1.1.png" alt="Joonis 3.1.1">
-        <img class="pildid" src="joonis_3.1.2.png" alt="Joonis 3.1.2">
+        <p><b>Mis on registri R15 sisu selle käsu täitmise järel?</b> <br> Protsessori registrite senine sisu oli järgmine: <br> R0 = 0 <br> R1 = 1286 <br> R2 = 1634 <br> R3 = 6422 <br> R4 = 1059 <br> R5 = 1373 <br> ... <br> R15 = 5789 <br> ... <br> R31 = 1012</p>
         <ol>
             <li>Loeme sisestatud tehet n-ö tagurpidi ehk vaatame osasid paremalt vasakule. ALU tehe on meile ette öeldud – liidetakse kahe registri sisu ning kirjutatakse tulemus kolmandasse registrisse.<br></li>
             <li>Järgmine väärtus on 01111 – see on register, kuhu kirjutame tehte tulemuse. Arvutame selle ümber kümnendkoodi. Bitte loeme arvutamisel samuti paremalt vasakule. 2<sup>0</sup> * 1 + 2<sup>1</sup> * 1 + 2<sup>2</sup> * 1 + 2<sup>3</sup> * 1 + 2<sup>4</sup> * 0 = 1 + 2 + 4 + 8 + 0 = 15. Seega see osa viitab registrile R15.</li>
@@ -74,7 +74,14 @@
     <section class="" id="harjutamine">
         <br><br><br>
         <h3>Vihjetega ülesanne</h3>
-        <img class="pildid" src="joonis_3.2.1.png" alt="Joonis 3.2.1">
+        <p>Testi alguses toodud joonisel (loengu lõpu pilt audika tahvlist) kujutatud RISC protsessoril tehakse järgmine masinkoodi tehe <br> 00001 00010 01111 00000000000000011 <br> Juhtsignaalid:</p>
+        <ul>
+            <li>ValiB=0</li>
+            <li>ALU_tehe = 00000000000000011 <br> (See on kahe registri sisu liitmise ja tulemuse kolmandasse registrisse kirjutamise tehe)</li>
+            <li>Vali_Y=00</li>
+            <li>Vali_C=01</li>
+        </ul>
+        <p><b>Mis on puhverregistri RY sisu selle käsu neljanda sammu (suhtlus mäluga) täitmise järel?</b> <br> Protsessori registrite senine sisu oli järgmine: <br> R0 = 0 <br> R1 = 3672 <br> R2 = 2091 <br> R3 = 1530 <br> R4 = 5393 <br> R5 = 4123 <br> ... <br> R15 = 7934 <br> ... <br> R31 = 4932</p>
         <details>
             <summary>Vihje 1</summary>
             <p>Käskude täitmise järjekord RISC protsessoris on järgmine.</p>
