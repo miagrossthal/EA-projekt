@@ -35,8 +35,8 @@ nav ul li a, nav ul li span {
     padding: 14px 30px;
     text-decoration: none; /* Lingid ei ole allakriipsutatud */
     cursor: pointer;
-    color: aliceblue;
-    background-color: darkblue;
+    color: rgb(0, 0, 86);
+    background-color: rgb(255, 150, 59);
 }
 
 nav ul ul li {
