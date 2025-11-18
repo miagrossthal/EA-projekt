@@ -2,6 +2,7 @@ body {
   background: linear-gradient(to left, rgb(203, 243, 255), rgb(207, 207, 255));
   font-family: Georgia, "Times New Roman", sans-serif;
   color: rgb(0, 0, 81);
+  line-height:22px;
 }
 
 nav {
@@ -119,4 +120,75 @@ h4 {
 
 .bold-marker li::marker {
   font-weight: bold;
+}
+
+summary {
+  cursor: pointer;
+}
+
+/* Foto karussell */
+ img.karussell {
+    width: 480px;
+    height: 320px;
+ }
+
+@keyframes spinner {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+#stage {
+    margin: 1em auto;
+    perspective: 1200px;
+    padding-left: 200px;
+    position: relative;
+    height: 220px; /* Lisan kõrguse, et karussell võtaks ära kindla ruumi ja ei oleks teiste tekstide või asjade peal */
+}
+
+#spinner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; /* Animatsioon kordub lõpmatult */
+    animation-duration: 3s; /* Animatsiooni kestus on 10 sekundit */
+    transform-style: preserve-3d;
+    transform-origin: center center;
+}
+
+#spinner:hover {
+    animation-play-state: paused;
+}
+
+#spinner img {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: lightgray;
+    box-shadow: inset 0 0 20px darkgray;
+}
+
+/* Piltide asetus karussellil */
+.picture1 {
+    transform: rotateY(-0deg) translateX(180px);
+}
+
+.picture2 {
+    transform: rotateY(-72deg) translateX(180px);
+}
+
+.picture3 {
+    transform: rotateY(-144deg) translateX(180px);
+}
+
+.picture4 {
+    transform: rotateY(-216deg) translateX(180px);
+}
+
+.picture5 {
+    transform: rotateY(-288deg) translateX(180px);
 }
