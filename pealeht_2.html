@@ -45,7 +45,7 @@
         <h1></h1>
         <h3>Näidislahendusega ülesanne</h3>
         <img class="pildid" src="joonis_2.1.png" alt="Joonis 2.1">
-        <ol>
+        <ol class="bold-marker">
             <li>Tahame salvestada 18 168 plokki põhimälust vahemällu, aga need ei mahu sinna korraga, sest vahemälu on vaid 512 plokki. Sõnade arv pole praegu oluline, sest töötame plokkidega.<br></li>
             <li><i>Direct mapping</i> tähendab, et plokkidele määratakse järjest asukohad ning kui asukoht on täidetud, kirjutatakse see üle. See tähendab, et põhimälu plokk 0 läheb vahemälu plokki 0, aga kuna aadressid lõppevad 511 juures, siis põhimälu plokk 512 läheb ka kohale 0 ja eelmine väärtus kirjutatakse üle.</li>
             <li>Tahame leida viimase ploki asukoha, seega peame tehteid tegema kogu kirjutatavate plokkide arvuga, sest viimane ongi 18 168. plokk (jätame sellele tähelepanu pööramata, et tema indeks on 18 167, sest ka kõikide teiste andmete puhul on indeks ühe võrra väiksem, seega lõpptulemusele see mõju ei avalda).<br></li>
