@@ -48,12 +48,12 @@
             <p id="ül-tekst">Joonisel kujutatud nihkeregistri sisenditesse antakse alljärgnevad signaalid.<br>a<sub>0</sub> = 11111100 <br> a<sub>1</sub> = 11111111 <br> a<sub>2</sub> = 00001111 <br> a<sub>3</sub> = 11110011 <br> a<sub>4</sub> = 11001111 <br> a<ub>5</ub> = 11111100 <br> a<sub>6</sub> = 01010101 <br> Milline on signaal nihkeregistri väljundites f<sub>0</sub>f<sub>1</sub>f<sub>2</sub>f<sub>3</sub> kujutatud tsükli lõpuks? <br> Vastuseks kirjuta neli numbrit ülaltoodud järjestuses.</p>
             <img class="pildid" id="ül-joonis" src="joonis_1.1.1UUS.png" alt="Joonis 1.1.1">
         </div>
-        <ol>
+        <ol class="bold-marker">
             <li>Pildil on nihkeregister, milles a<sub>1</sub> võrdub kogu aeg ühega. Kõik AND-id, kuhu väljundid (f-id) suunduvad saavad oma teiseks sisendiks alati nulli, kuna see tuleb a<sub>1</sub> vastandväärtusest, seega eelmised väljundid ei mõjuta järgmisi väljundeid (need n-ö nullitakse ära). See tähendab, et kogu bitijadaga pole vaja ülesannet läbi teha, piisab küsitud kohast. Küsitud on väljundeid tsükli lõpus – see tähendab, et peame tsükli läbi tegema signaalide (a-de) viimase numbriga ehk viimase biti väärtusega. Ehk peame skeemi läbi tegema, kui <br> a<sub>0</sub> = 0, a<sub>1</sub> = 1, a<sub>2</sub> = 1, a<sub>3</sub> = 1, a<sub>4</sub> = 1, a<sub>5</sub> = 0, a<sub>6</sub> = 1.<br></li>
             <li>Alustame skeemi alt. Väärtused liiguvad mööda juhtmeid edasi. Mummu tähendab väärtuse vastupidiseks muutmist pärast mingit operatsiooni ehk tehet bittidega. Kui aga tehet teha ei taheta, vaid tahetakse lihtsalt väärtust vastupidiseks muuta, kirjutatakse mummu ette kolmnurk. Ümara tipuga “kolmnurkne” kujund tähendab AND operatsiooni ehk mõlemad väärtused peavad olema “tõesed” ehk ühed. AND operatsioonist võib mõelda ka kui korrutustehtest: 0*0 = 0, 0*1 = 0, 1*0 = 0, 1*1 = 1. Terava tipuga kolmnurkne kujund tähistab OR operatsiooni ehk vähemalt üks väärtustest peab olema “tõene” ehk 1. Ka mõlemad võivad olla ühed. Täidame kujundid vastavalt sellele ära.</li>
         </ol>
         <img class="pildid" src="joonis_1.1.2_UUSõige.png" alt="Joonis 1.1.2" width="500px">
-        <ol start="3">
+        <ol start="3" class="bold-marker">
             <li>Oleme ära täitnud nii palju kui võimalik ilma väljundeid (f-id) välja arvutamata. PS! kuna a<sub>1</sub> vastandväärtus on 0, siis kõik AND-id, mille sisend see on, on alati nullid ja teine sisend ei loe. Väljundi arvutamiseks vaatame trigeri tüüpi (meie skeemil D), taktsagedust (tähis tühi kolmnurk, mitte segamini ajada väärtuse pööramisega) ja sisendit.<br></li>
             <li>Arvutame esimese väljundi f<sub>0</sub>. Meil on D-triger, mille väljund tuleb Q-st ilma katuseta ehk väärtust ei pöörata vastandväärtuseks. Taktsignaal on a<sub>6</sub>, mis on parasjagu 1 – see tähendab, et eelmise tsükli tehte väärtus muutub uue tsükli tehte väärtuseks (kui oleks 0, siis peaks arvutama eelmise tsükli väljundi ja see oleks ka uue tehte väljundiks). Sisend tuleb OR-ist ja on 1, seega on ka väljund üks. Nagu ka teada, siis D-triger on data-triger ehk “salvestab” lihtsalt väärtuse, mis tema sisendiks on.<br></li>
             <li>Kordame sama ülejäänud väljunditega.<br></li>
@@ -97,7 +97,7 @@
     <section class="" id="tagasiside">
     </section>
     <script src="ea-veebilehe-projekt.js"></script>
-    <h3>Palun anna meie veebilehele <a href="https://forms.clickup.com/90151944952/f/2kyqk0qr-655/1DZPFUTZS4X4STH06J">tagasisidet!</a></h3>
+    <h4>Palun anna meie veebilehele <a href="https://forms.clickup.com/90151944952/f/2kyqk0qr-655/1DZPFUTZS4X4STH06J">tagasisidet!</a></h4>
     <br>
     <hr class = "style1">
     <p class="nimi"><i>Veebilehe koostajad: Mia Grossthal, Sandra Karo</i></p>

@@ -61,7 +61,7 @@
             <li>Vali_C=01</li>
         </ul>
         <p><b>Mis on registri R15 sisu selle käsu täitmise järel?</b> <br> Protsessori registrite senine sisu oli järgmine: <br> R0 = 0 <br> R1 = 1286 <br> R2 = 1634 <br> R3 = 6422 <br> R4 = 1059 <br> R5 = 1373 <br> ... <br> R15 = 5789 <br> ... <br> R31 = 1012</p>
-        <ol>
+        <ol class="bold-marker">
             <li>Loeme sisestatud tehet n-ö tagurpidi ehk vaatame osasid paremalt vasakule. ALU tehe on meile ette öeldud – liidetakse kahe registri sisu ning kirjutatakse tulemus kolmandasse registrisse.<br></li>
             <li>Järgmine väärtus on 01111 – see on register, kuhu kirjutame tehte tulemuse. Arvutame selle ümber kümnendkoodi. Bitte loeme arvutamisel samuti paremalt vasakule. 2<sup>0</sup> * 1 + 2<sup>1</sup> * 1 + 2<sup>2</sup> * 1 + 2<sup>3</sup> * 1 + 2<sup>4</sup> * 0 = 1 + 2 + 4 + 8 + 0 = 15. Seega see osa viitab registrile R15.</li>
             <li>Järgmine väärtus on 00010. Nagu enne nägime, siis kõik nullide kohal olevad arvud korrutatakse niikuinii nulliga, seega lihtsustatud tehe on siin 2<sup>1</sup> * 1 = 2. See tähendab, et tehte esimene osa on registri R2 sisu, mis on 1632.<br></li>
@@ -85,7 +85,7 @@
         <details>
             <summary>Vihje 1</summary>
             <p>Käskude täitmise järjekord RISC protsessoris on järgmine.</p>
-                <ol>
+                <ol class="bold-marker">
                     <li>Loe käsk, PC +1.</li>
                     <li>Dekodeeri käsk ja loe R-ide sisu [*lähteregister*].</li>
                     <li>Arvuta [*ALU*].</li>
@@ -121,7 +121,7 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/eRXE8Aebp7s?si=_Cl0UbPYm0Debdd7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
     <script src="ea-veebilehe-projekt.js"></script>
-    <h3>Palun anna meie veebilehele <a href="https://forms.clickup.com/90151944952/f/2kyqk0qr-655/1DZPFUTZS4X4STH06J">tagasisidet!</a></h3>
+    <h4>Palun anna meie veebilehele <a href="https://forms.clickup.com/90151944952/f/2kyqk0qr-655/1DZPFUTZS4X4STH06J">tagasisidet!</a></h4>
     <br>
     <hr class = "style1">
     <p class="nimi"><i>Veebilehe koostajad: Mia Grossthal, Sandra Karo</i></p>

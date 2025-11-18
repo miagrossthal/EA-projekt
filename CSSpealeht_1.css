@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(195, 231, 242);
   font-family: Georgia, "Times New Roman", sans-serif;
   color: rgb(0, 0, 81);
 }
@@ -117,4 +117,27 @@ nav ul li:hover .nav-alammenüü {
 #ül-joonis {
   max-width: 500px;
   display: block;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  background-color: orange;
+  display:inline;
+  color: #00448d;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  text-align:justify;
+}
+
+.bold-marker li::marker {
+  font-weight: bold;
 }
