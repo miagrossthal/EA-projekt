@@ -101,3 +101,18 @@ nav ul li:hover .nav-alammenüü {
   margin-top: 10px;
   font-weight: bold;
 }
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  background-color: orange;
+  display:inline;
+  color: #00448d;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
