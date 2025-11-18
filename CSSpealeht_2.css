@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background: linear-gradient(to left, rgb(203, 243, 255), rgb(207, 207, 255));
   font-family: Georgia, "Times New Roman", sans-serif;
   color: rgb(0, 0, 81);
 }
