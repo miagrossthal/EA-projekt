@@ -2,6 +2,7 @@ body {
   background: linear-gradient(to right, rgb(203, 243, 255), rgb(207, 207, 255));
   font-family: Georgia, "Times New Roman", sans-serif;
   color: rgb(0, 0, 81);
+  line-height:22px;
 }
 
 /*kogu nav sama mis main failis*/
@@ -141,3 +142,8 @@ p {
 .bold-marker li::marker {
   font-weight: bold;
 }
+
+summary {
+  cursor: pointer;
+}
+
