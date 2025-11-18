@@ -45,7 +45,7 @@
         <h1></h1>
         <h3>Näidislahendusega ülesanne</h3>
         <p>Arvuti põhimälus saab salvestada 32 768 plokki infot, vahemälus 512 plokki. Ühes plokis on 8 sõna. Mis numbriga vahemälu plokki salvestatakse põhimälus 18 168. plokis paiknev info, kui selles vahemälus kasutatakse otsest infopaigutusviisi (<i>Direct mapping</i>)? Plokkide nummerdamine algab nii vahe- kui ka põhimälu puhul plokist nr 0.</p>
-        <ol>
+        <ol class="bold-marker">
             <li>Tahame salvestada 18 168 plokki põhimälust vahemällu, aga need ei mahu sinna korraga, sest vahemälu on vaid 512 plokki. Sõnade arv pole praegu oluline, sest töötame plokkidega.<br></li>
             <li><i>Direct mapping</i> tähendab, et plokkidele määratakse järjest asukohad ning kui asukoht on täidetud, kirjutatakse see üle. See tähendab, et põhimälu plokk 0 läheb vahemälu plokki 0, aga kuna aadressid lõppevad 511 juures, siis põhimälu plokk 512 läheb ka kohale 0 ja eelmine väärtus kirjutatakse üle.</li>
             <li>Tahame leida viimase ploki asukoha, seega peame tehteid tegema kogu kirjutatavate plokkide arvuga, sest viimane ongi 18 168. plokk (jätame sellele tähelepanu pööramata, et tema indeks on 18 167, sest ka kõikide teiste andmete puhul on indeks ühe võrra väiksem, seega lõpptulemusele see mõju ei avalda).<br></li>
@@ -57,7 +57,7 @@
     <section class="" id="harjutamine">
         <br><br><br>
         <h3>Vihjetega ülesanne</h3>
-        <img class="pildid" src="joonis_2.2.png" alt="Joonis 2.2">
+        <p>Arvuti mälu aadressid on 32 bitised. Vahemälus saab salvestada 512 plokki infot. Ühes plokis on on 2<sup>4</sup> sõna (lihtsuse mõttes eeldame, et sõnad on 1-baidised).<br>Mitut bitti läheb vaja selleks, et üheselt identifitseerida vahemälu pesas 83 salvestatud infoplokk, kui selles vahemälus kasutatakse assotsiatiivset infopaigutusviisi (<i>Associative mapping</i>)? Ehk teisisõnu, mitme bitine on nn sildi väli (ingl <i>tag field</i>)?</p>
         <details>
             <summary>Vihje 1</summary>
             <p>Assotsiatiivne paigutusviis tähendab, et nüüd ei salvestata plokke mitte järjest, vaid suvalisse vabasse plokki.</p>
@@ -91,7 +91,7 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/eRXE8Aebp7s?si=_Cl0UbPYm0Debdd7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
     <script src="ea-veebilehe-projekt.js"></script>
-    <h3>Palun anna meie veebilehele <a href="https://forms.clickup.com/90151944952/f/2kyqk0qr-655/1DZPFUTZS4X4STH06J">tagasisidet!</a></h3>
+    <h4>Palun anna meie veebilehele <a href="https://forms.clickup.com/90151944952/f/2kyqk0qr-655/1DZPFUTZS4X4STH06J">tagasisidet!</a></h4>
     <br>
     <hr class = "style1">
     <p class="nimi"><i>Veebilehe koostajad: Mia Grossthal, Sandra Karo</i></p>
