@@ -38,7 +38,7 @@ nav ul li a, nav ul li span {
     text-decoration: none; /* Lingid ei ole allakriipsutatud */
     cursor: pointer;
     color: rgb(0, 0, 86);
-    background-color: rgb(255, 150, 59);
+    background-color: rgb(255, 187, 127);
 }
 
 nav ul ul li {
@@ -125,7 +125,7 @@ h2 {
 }
 
 h3 {
-  background-color: orange;
+  background-color: rgb(255, 187, 127);
   display:inline;
   color: #00448d;
   font-size: 20px;
@@ -212,4 +212,11 @@ summary {
 
 .picture5 {
     transform: rotateY(-288deg) translateX(180px);
+}
+
+#ül-tekst {
+  background-color: rgba(255, 240, 189, 0.7); /* must taust 50% läbipaistvusega */
+  border-radius: 10px; /* ümarad nurgad */
+  width: fit-content; /* kast kohandub teksti järgi */
+  padding: 10px;
 }

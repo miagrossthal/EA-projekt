@@ -46,30 +46,34 @@
         <h3>Näidislahendusega ülesanne</h3>
         <p>Loengus käsitlesime RISC-protsessorit, mille põhimõtte skeem on kujutatud järgmisel joonisel.</p>
         <img class="pildid" src="joonis_3.1.1UUS.png" alt="Joonis 3.1.1" width="1000px">
-        <p>Selle RISC-protsessori käsud on 32-bitised, käsud täidetakse mäluviivituste puudumisel viie takti jooksul. <br> Registrite adresseerimiseks saame käsus kasutada viit bitti (iga adresseeritava registri kohta). <br> Multiplekserite juhtsignaalid, joonisel punase värviga, aktiveerivad sisendeid selliselt, et <br></p>
-        <ul>
-            <li>juhtsignaal 0 valib kõige vasakpoolsema sisendi,</li>
-            <li>juhtsignaal 1 valb multiplekseril vasakult teise sisendi,</li>
-            <li>juhtsignaal 2 valib multiplekseril vasakult kolmanda sisendi,</li>
-            <li>jne</li>
-        </ul>
-        <p>Testi alguses toodud joonisel (loengu lõpu pilt audika tahvlist) kujutatud RISC protsessoril tehakse järgmine masinkoodi tehe <br> 00001 00010 01111 00000000000000011 <br> Juhtsignaalid:</p>
-        <ul>
-            <li>ValiB=0</li>
-            <li>ALU_tehe = 00000000000000011 <br> (See on kahe registri sisu liitmise ja tulemuse kolmandasse registrisse kirjutamise tehe)</li>
-            <li>Vali_Y=00</li>
-            <li>Vali_C=01</li>
-        </ul>
-        <p><b>Mis on registri R15 sisu selle käsu täitmise järel?</b> <br> Protsessori registrite senine sisu oli järgmine: <br> R0 = 0 <br> R1 = 1286 <br> R2 = 1634 <br> R3 = 6422 <br> R4 = 1059 <br> R5 = 1373 <br> ... <br> R15 = 5789 <br> ... <br> R31 = 1012</p>
-        <ol class="bold-marker">
-            <li>Loeme sisestatud tehet n-ö tagurpidi ehk vaatame osasid paremalt vasakule. ALU tehe on meile ette öeldud – liidetakse kahe registri sisu ning kirjutatakse tulemus kolmandasse registrisse.<br></li>
-            <li>Järgmine väärtus on 01111 – see on register, kuhu kirjutame tehte tulemuse. Arvutame selle ümber kümnendkoodi. Bitte loeme arvutamisel samuti paremalt vasakule. 2<sup>0</sup> * 1 + 2<sup>1</sup> * 1 + 2<sup>2</sup> * 1 + 2<sup>3</sup> * 1 + 2<sup>4</sup> * 0 = 1 + 2 + 4 + 8 + 0 = 15. Seega see osa viitab registrile R15.</li>
-            <li>Järgmine väärtus on 00010. Nagu enne nägime, siis kõik nullide kohal olevad arvud korrutatakse niikuinii nulliga, seega lihtsustatud tehe on siin 2<sup>1</sup> * 1 = 2. See tähendab, et tehte esimene osa on registri R2 sisu, mis on 1632.<br></li>
-            <li>Järgmine väärtus on 00001, mis on ka kümnendkoodis 1. See tähendab, et tehte teine osa on registri R1 sisu, mis on 1286.<br></li>
-            <li>Nagu ülesandes öeldud, peame tegema liitmistehte. Kokkuvõttes liidame R2 ja R1 sisu ning kirjutame registrisse R15. 1632 + 1286 = 2920.<br></li>
-            <li>Küsitud on registri R15 sisu käsu täitmise järel. See tähendab, et eelmine väärtus 5789 on üle kirjutatud meie tehte tulemusega ning ülesande vastus on 2920.<br></li>
-            <li>Saime teada, et tahvli vaatamine polnudki selles ülesandes vajalik.</li>
-        </ol>
+        <div class="ül-tekst">
+            <p>Selle RISC-protsessori käsud on 32-bitised, käsud täidetakse mäluviivituste puudumisel viie takti jooksul. <br> Registrite adresseerimiseks saame käsus kasutada viit bitti (iga adresseeritava registri kohta). <br> Multiplekserite juhtsignaalid, joonisel punase värviga, aktiveerivad sisendeid selliselt, et <br></p>
+            <ul>
+                <li>juhtsignaal 0 valib kõige vasakpoolsema sisendi,</li>
+                <li>juhtsignaal 1 valb multiplekseril vasakult teise sisendi,</li>
+                <li>juhtsignaal 2 valib multiplekseril vasakult kolmanda sisendi,</li>
+                <li>jne</li>
+            </ul>
+            <p>Testi alguses toodud joonisel (loengu lõpu pilt audika tahvlist) kujutatud RISC protsessoril tehakse järgmine masinkoodi tehe <br> 00001 00010 01111 00000000000000011 <br> Juhtsignaalid:</p>
+            <ul>
+                <li>ValiB=0</li>
+                <li>ALU_tehe = 00000000000000011 <br> (See on kahe registri sisu liitmise ja tulemuse kolmandasse registrisse kirjutamise tehe)</li>
+                <li>Vali_Y=00</li>
+                <li>Vali_C=01</li>
+            </ul>
+            <p><b>Mis on registri R15 sisu selle käsu täitmise järel?</b> <br> Protsessori registrite senine sisu oli järgmine: <br> R0 = 0 <br> R1 = 1286 <br> R2 = 1634 <br> R3 = 6422 <br> R4 = 1059 <br> R5 = 1373 <br> ... <br> R15 = 5789 <br> ... <br> R31 = 1012</p>
+        </div>
+        <div class="lahendus">
+            <ol class="bold-marker">
+                <li>Loeme sisestatud tehet n-ö tagurpidi ehk vaatame osasid paremalt vasakule. ALU tehe on meile ette öeldud – liidetakse kahe registri sisu ning kirjutatakse tulemus kolmandasse registrisse.<br></li>
+                <li>Järgmine väärtus on 01111 – see on register, kuhu kirjutame tehte tulemuse. Arvutame selle ümber kümnendkoodi. Bitte loeme arvutamisel samuti paremalt vasakule.<br> 2<sup>0</sup> * 1 + 2<sup>1</sup> * 1 + 2<sup>2</sup> * 1 + 2<sup>3</sup> * 1 + 2<sup>4</sup> * 0 = 1 + 2 + 4 + 8 + 0 = 15. Seega see osa viitab registrile R15.</li>
+                <li>Järgmine väärtus on 00010. Nagu enne nägime, siis kõik nullide kohal olevad arvud korrutatakse niikuinii nulliga, seega lihtsustatud tehe on siin 2<sup>1</sup> * 1 = 2. See tähendab, et tehte esimene osa on registri R2 sisu, mis on 1632.<br></li>
+                <li>Järgmine väärtus on 00001, mis on ka kümnendkoodis 1. See tähendab, et tehte teine osa on registri R1 sisu, mis on 1286.<br></li>
+                <li>Nagu ülesandes öeldud, peame tegema liitmistehte. Kokkuvõttes liidame R2 ja R1 sisu ning kirjutame registrisse R15. 1632 + 1286 = 2920.<br></li>
+                <li>Küsitud on registri R15 sisu käsu täitmise järel. See tähendab, et eelmine väärtus 5789 on üle kirjutatud meie tehte tulemusega ning ülesande vastus on 2920.<br></li>
+                <li>Saime teada, et tahvli vaatamine polnudki selles ülesandes vajalik.</li>
+            </ol>
+        </div>
     </section>
     <br><br><br>
     <section class="karussell-piltidega">

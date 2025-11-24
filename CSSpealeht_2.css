@@ -37,7 +37,7 @@ nav ul li a, nav ul li span {
     text-decoration: none; /* Lingid ei ole allakriipsutatud */
     cursor: pointer;
     color: rgb(0, 0, 86);
-    background-color: rgb(255, 150, 59);
+    background-color: rgb(255, 187, 127);
 }
 
 nav ul ul li {
@@ -191,4 +191,11 @@ summary {
 
 .picture5 {
     transform: rotateY(-288deg) translateX(180px);
+}
+
+.lahendatud {
+  background-color: rgba(255, 242, 221, 0.5); /* must taust 50% läbipaistvusega */
+  border-radius: 10px; /* ümarad nurgad */
+  width: fit-content; /* kast kohandub teksti järgi */
+  padding: 10px;
 }

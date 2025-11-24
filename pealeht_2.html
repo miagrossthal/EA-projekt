@@ -45,14 +45,16 @@
         <h1></h1>
         <h3>Näidislahendusega ülesanne</h3>
         <p>Arvuti põhimälus saab salvestada 32 768 plokki infot, vahemälus 512 plokki. Ühes plokis on 8 sõna. Mis numbriga vahemälu plokki salvestatakse põhimälus 18 168. plokis paiknev info, kui selles vahemälus kasutatakse otsest infopaigutusviisi (<i>Direct mapping</i>)? Plokkide nummerdamine algab nii vahe- kui ka põhimälu puhul plokist nr 0.</p>
-        <ol class="bold-marker">
-            <li>Tahame salvestada 18 168 plokki põhimälust vahemällu, aga need ei mahu sinna korraga, sest vahemälu on vaid 512 plokki. Sõnade arv pole praegu oluline, sest töötame plokkidega.<br></li>
-            <li><i>Direct mapping</i> tähendab, et plokkidele määratakse järjest asukohad ning kui asukoht on täidetud, kirjutatakse see üle. See tähendab, et põhimälu plokk 0 läheb vahemälu plokki 0, aga kuna aadressid lõppevad 511 juures, siis põhimälu plokk 512 läheb ka kohale 0 ja eelmine väärtus kirjutatakse üle.</li>
-            <li>Tahame leida viimase ploki asukoha, seega peame tehteid tegema kogu kirjutatavate plokkide arvuga, sest viimane ongi 18 168. plokk (jätame sellele tähelepanu pööramata, et tema indeks on 18 167, sest ka kõikide teiste andmete puhul on indeks ühe võrra väiksem, seega lõpptulemusele see mõju ei avalda).<br></li>
-            <li>Peame teostama moodulustehte ehk leidma jagamise jäägi. Kirjutame selle arusaadavamalt lahti. Kõigepealt teostame täisarvulise jagamise (jätame koma taga oleva ära) salvestatavate plokkide ja võimalike kirjutuskohtadega. 18168 // 512 = 35.<br></li>
-            <li>Leidsime, mitu korda täidame kogu 512 plokki vahemälus ära. Nüüd korrutame 35 * 512 = 17 920, et saada mitu plokki eelmise protsessi käigus kokku salvestame.<br></li>
-            <li>Nüüd lahutame plokkide arvu, mis salvestatakse täies ulatuses vahemällu, kogu salvestatavate plokkide arvust. 18 168 - 17 920 = 248. See tähendab, et viimane plokk salvestubki 248. plokki, sest viimases tsüklis ei täideta kogu 512 plokki ära.</li>
-        </ol>
+        <div class="lahendatud">
+            <ol class="bold-marker">
+                <li>Tahame salvestada 18 168 plokki põhimälust vahemällu, aga need ei mahu sinna korraga, sest vahemälu on vaid 512 plokki. Sõnade arv pole praegu oluline, sest töötame plokkidega.<br></li>
+                <li><i>Direct mapping</i> tähendab, et plokkidele määratakse järjest asukohad ning kui asukoht on täidetud, kirjutatakse see üle. See tähendab, et põhimälu plokk 0 läheb vahemälu plokki 0, aga kuna aadressid lõppevad 511 juures, siis põhimälu plokk 512 läheb ka kohale 0 ja eelmine väärtus kirjutatakse üle.</li>
+                <li>Tahame leida viimase ploki asukoha, seega peame tehteid tegema kogu kirjutatavate plokkide arvuga, sest viimane ongi 18 168. plokk (jätame sellele tähelepanu pööramata, et tema indeks on 18 167, sest ka kõikide teiste andmete puhul on indeks ühe võrra väiksem, seega lõpptulemusele see mõju ei avalda).<br></li>
+                <li>Peame teostama moodulustehte ehk leidma jagamise jäägi. Kirjutame selle arusaadavamalt lahti. Kõigepealt teostame täisarvulise jagamise (jätame koma taga oleva ära) salvestatavate plokkide ja võimalike kirjutuskohtadega. 18168 // 512 = 35.<br></li>
+                <li>Leidsime, mitu korda täidame kogu 512 plokki vahemälus ära. Nüüd korrutame 35 * 512 = 17 920, et saada mitu plokki eelmise protsessi käigus kokku salvestame.<br></li>
+                <li>Nüüd lahutame plokkide arvu, mis salvestatakse täies ulatuses vahemällu, kogu salvestatavate plokkide arvust. 18 168 - 17 920 = 248. See tähendab, et viimane plokk salvestubki 248. plokki, sest viimases tsüklis ei täideta kogu 512 plokki ära.</li>
+            </ol>
+        </div>
     </section>
     <br><br><br>
     <section class="karussell-piltidega">
