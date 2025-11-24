@@ -1,8 +1,8 @@
 // Õiged vastused alamlehtedele
 const oigedVastused = {
   "pealeht_1": "1011",
-  "pealeht_2": "1100", // muuda vastust
-  "pealeht_3": "1001" //muuda vastust
+  "pealeht_2": "28",
+  "pealeht_3": "5763" 
 };
 
 // Lisa event listener kõikidele kontrolli nuppudele
