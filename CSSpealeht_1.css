@@ -83,7 +83,7 @@ nav ul li:hover .nav-alammenüü {
   box-shadow: 0 0 8px rgba(40, 167, 69, 0.5); /* Helendus ümber */
 }
 
-#kontrolli {
+.kontrolli {
   background-color: #007bff;
   color: white;
   border: none;
@@ -94,7 +94,7 @@ nav ul li:hover .nav-alammenüü {
   transition: 0.3s;
 }
 
-#kontrolli:hover {
+.kontrolli:hover {
   background-color: #0056b3;
 }
 

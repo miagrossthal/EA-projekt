@@ -2,7 +2,7 @@
 const oigedVastused = {
   "pealeht_1": "1011",
   "pealeht_2": "28",
-  "pealeht_3": "5763" 
+  "pealeht_3": "5763",
 };
 
 // Lisa event listener kõikidele kontrolli nuppudele
