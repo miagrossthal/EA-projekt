@@ -5,11 +5,6 @@ body {
   line-height:22px;
 }
 
-nav {
-    /*gap: 50px;*/
-    /*justify-content: right;*/ /* Lingid on paremal */
-}
-
 nav ul {
     /* Loendi sümbolid ja numbrid puuduvad */
     list-style-type: none;
@@ -205,14 +200,9 @@ summary {
   background-color: rgba(255, 221, 168, 0.5); /* taust läbipaistvusega */
   border-radius: 10px; /* ümarad nurgad */
   width: fit-content; /* kast kohandub teksti järgi */
-<<<<<<< HEAD
   border: 2px solid #ffffff;
-=======
-  /*padding: 10px;*/
-  border: 2px solid #333;
 }
 
 .subway {
   border: none;
->>>>>>> 645dba086dcac5b649d95cf05f5cb67c9c2e3764
 }
