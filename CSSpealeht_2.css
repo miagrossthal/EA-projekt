@@ -66,10 +66,10 @@ nav ul li:hover .nav-alammenüü {
 
 /* kontrollkasti disain */
 #vastus {
-  width: 150px;          /* Laius */
-  height: 40px;          /* Kõrgus */
-  font-size: 17px;       /* Teksti suurus */
-  padding: 8px;          /* Sisevahe */
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  padding: 8px;
   border: 2px solid #007bff; /* Sinine raam */
   border-radius: 10px;   /* Ümardatud nurgad */
   outline: none;         /* Eemaldab vaikimisi äärise klikkimisel */
@@ -194,7 +194,7 @@ summary {
 }
 
 .lahendatud {
-  background-color: rgba(255, 242, 221, 0.5); /* must taust 50% läbipaistvusega */
+  background-color: rgba(255, 242, 221, 0.5); /* taust läbipaistvusega */
   border-radius: 10px; /* ümarad nurgad */
   width: fit-content; /* kast kohandub teksti järgi */
   padding: 10px;
@@ -204,7 +204,7 @@ summary {
 .piirjoon {
   display: inline-block;        /* et padding ja border töötaksid korrektselt */
   padding: 6px 10px;            /* vahe teksti ja piirjoone vahel */
-  border: 1px solid #ffffff;       /* piirjoon */
+  border: 1px solid #ffffff;
   background: rgb(203, 243, 255);      /* ainult piirjoon, pole täitevärvi */
-  border-radius: 6px;           /* ümaramad nurgad (valikuline) */
+  border-radius: 6px;           /* ümaramad nurgad */
 }

@@ -1,11 +1,10 @@
 html, body {
-    /* background-color: #00a7e1; */
     background-image: url('veebileht-taispikk.png');
     background-size: cover; /* Katab kogu ala, säilitades proportsioonid */
     background-position: center center; /* Keskendab pildi */
     background-repeat: no-repeat;
-    background-attachment: fixed; /* valikuline, saab ka "scroll" */ /* Hoiab tausta kogu lehe ulatuses */
-    min-height: 100vh; /* Kui tahad, et body oleks vähemalt kogu kõrgusega */
+    background-attachment: fixed; /* Hoiab tausta kogu lehe ulatuses */
+    min-height: 100vh;
     font-family: Georgia, "Times New Roman", sans-serif;
     margin: 10px;
     padding: 5px;
@@ -93,7 +92,6 @@ a:active {
 
 h1 {
     font-size: 40px;
-    /*color: #ebebeb;*/
     color: #0474ba;
     text-align: center;
     line-height: 50px;
@@ -114,7 +112,7 @@ summary {
     font-weight: bold;
 }
 
-/* Vbl on vaja siin asju muuta, see kõik on keerleva kuubi osa */
+/* Keerleva kuup */
 img.kuup {
     width:200px; 
     height:200px;
@@ -137,7 +135,7 @@ img.kuup {
     margin-left: 50%;
     margin-top: 50px;
     margin-bottom: 75px;
-    animation: spin 8s infinite linear; /* Animatsioon kestab 10sekundit, pöörleb ning kordub lõpmatult */
+    animation: spin 8s infinite linear; /* Animatsioon kestab 8sekundit, pöörleb ning kordub lõpmatult */
     transform-style: preserve-3d;
  }
  
