@@ -109,7 +109,7 @@ nav ul li:hover .nav-alammenüü {
   padding: 5px;
 }
 
-#ül-joonis {
+#ül-joonis1, #ül-joonis2 {
   max-width: 500px;
   display: block;
 }
@@ -208,7 +208,7 @@ summary {
     transform: rotateY(-288deg) translateX(180px);
 }
 
-#ül-tekst {
+#ül-tekst1, #ül-tekst2 {
   background-color: rgba(255, 240, 189, 0.7); /* taust läbipaistvusega */
   border-radius: 10px; /* ümarad nurgad */
   width: fit-content; /* kast kohandub teksti järgi */
