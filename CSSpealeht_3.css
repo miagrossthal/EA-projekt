@@ -208,3 +208,7 @@ summary {
   /*padding: 10px;*/
   border: 2px solid #333;
 }
+
+.subway {
+  border: none;
+}

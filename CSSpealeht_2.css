@@ -208,3 +208,7 @@ summary {
   background: rgb(203, 243, 255);      /* ainult piirjoon, pole täitevärvi */
   border-radius: 6px;           /* ümaramad nurgad (valikuline) */
 }
+
+.subway {
+  border: none;
+}
