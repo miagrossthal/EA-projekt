@@ -219,6 +219,14 @@ summary {
   border-radius: 10px; /* ümarad nurgad */
   width: fit-content; /* kast kohandub teksti järgi */
   padding: 10px;
+<<<<<<< HEAD
+  border: 2px solid #333;
+}
+
+.subway {
+  border:1px solid white;
+}
+=======
   border: 2px solid #ffffff;
 }
 
@@ -246,3 +254,4 @@ summary {
   padding: 5px;
   border: 1px solid #ffffff;
 }
+>>>>>>> 08870ebb309bf8014941040cca9cd06b9d26fc17

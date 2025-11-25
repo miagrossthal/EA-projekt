@@ -206,5 +206,13 @@ summary {
   padding: 6px 10px;            /* vahe teksti ja piirjoone vahel */
   border: 1px solid #ffffff;
   background: rgb(203, 243, 255);      /* ainult piirjoon, pole täitevärvi */
+<<<<<<< HEAD
   border-radius: 6px;           /* ümaramad nurgad */
+=======
+  border-radius: 6px;           /* ümaramad nurgad (valikuline) */
+}
+
+.subway {
+  border: none;
+>>>>>>> 645dba086dcac5b649d95cf05f5cb67c9c2e3764
 }
