@@ -219,9 +219,39 @@ summary {
   border-radius: 10px; /* ümarad nurgad */
   width: fit-content; /* kast kohandub teksti järgi */
   padding: 10px;
+<<<<<<< HEAD
   border: 2px solid #333;
 }
 
 .subway {
   border:1px solid white;
 }
+=======
+  border: 2px solid #ffffff;
+}
+
+.ül-kast {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.tekst, 
+.pilt {
+  width: 50%;
+}
+
+.pilt img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tekst {
+  background-color: rgba(255, 219, 189, 0.5); /* must taust 50% läbipaistvusega */
+  border-radius: 10px; /* ümarad nurgad */
+  width: 50%; /* kast kohandub teksti järgi */
+  padding: 5px;
+  border: 1px solid #ffffff;
+}
+>>>>>>> 08870ebb309bf8014941040cca9cd06b9d26fc17
