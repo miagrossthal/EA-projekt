@@ -157,12 +157,12 @@ summary {
   }
 
 #stage {
-    margin: 1em auto;
+    width: 480px;
+    height: 320px;
+    margin: 2em auto;
     perspective: 1200px;
-    padding-left: 200px;
     position: relative;
-    height: 220px; /* Lisan kõrguse, et karussell võtaks ära kindla ruumi ja ei oleks teiste tekstide või asjade peal */
-}
+    }
 
 #spinner {
     width: 100%;
