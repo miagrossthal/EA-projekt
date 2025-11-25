@@ -198,4 +198,13 @@ summary {
   border-radius: 10px; /* ümarad nurgad */
   width: fit-content; /* kast kohandub teksti järgi */
   padding: 10px;
+  border: 2px solid #333;
+}
+
+.piirjoon {
+  display: inline-block;        /* et padding ja border töötaksid korrektselt */
+  padding: 6px 10px;            /* vahe teksti ja piirjoone vahel */
+  border: 2px solid #333;       /* piirjoon */
+  background: rgb(203, 243, 255);      /* ainult piirjoon, pole täitevärvi */
+  border-radius: 6px;           /* ümaramad nurgad (valikuline) */
 }

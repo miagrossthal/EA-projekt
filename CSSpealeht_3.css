@@ -198,6 +198,7 @@ summary {
   border-radius: 10px; /* ümarad nurgad */
   width: fit-content; /* kast kohandub teksti järgi */
   padding: 5px;
+  border: 2px solid #333;
 }
 
 .lahendus {
@@ -205,4 +206,5 @@ summary {
   border-radius: 10px; /* ümarad nurgad */
   width: fit-content; /* kast kohandub teksti järgi */
   /*padding: 10px;*/
+  border: 2px solid #333;
 }
